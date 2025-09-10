@@ -170,7 +170,7 @@ export default function ContactPage() {
                     <div className="grid md:grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <Label htmlFor="service">Service Needed *</Label>
-                        <Select onValueChange={(value) => handleSelectChange("service", value)} required>
+                        <Select onValueChange={(value: string) => handleSelectChange("service", value)} required>
                           <SelectTrigger>
                             <SelectValue placeholder="Select a service" />
                           </SelectTrigger>
@@ -185,7 +185,7 @@ export default function ContactPage() {
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="budget">Budget Range</Label>
-                        <Select onValueChange={(value) => handleSelectChange("budget", value)}>
+                        <Select onValueChange={(value: string) => handleSelectChange("budget", value)}>
                           <SelectTrigger>
                             <SelectValue placeholder="Select budget range" />
                           </SelectTrigger>
